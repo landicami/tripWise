@@ -3,6 +3,7 @@ import 'package:tripwise/pages/home_page.dart';
 import 'package:tripwise/pages/map_page.dart';
 import 'package:tripwise/pages/add_tip.dart';
 import 'package:tripwise/pages/user/profile_page.dart';
+import 'package:tripwise/pages/user/welcome_user.dart';
 import 'package:tripwise/shared/bottomnav_bar.dart';
 
 class MainNavigator extends StatefulWidget {
