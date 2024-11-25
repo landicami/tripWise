@@ -1,10 +1,13 @@
 import 'package:flutter/material.dart';
 import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
+import 'package:tripwise/pages/home_page.dart';
 import 'firebase_options.dart';
+
 import 'package:tripwise/shared/app_navigator.dart';
 import 'package:tripwise/pages/user/login_page.dart';
 import 'package:tripwise/pages/user/register_page.dart';
+import 'package:tripwise/pages/map_page.dart';
 import 'package:tripwise/pages/user/forgot_password.dart';
 
 void main() async {

@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:google_maps_flutter/google_maps_flutter.dart';
+import 'package:tripwise/pages/map_page.dart';
 
 class HomePage extends StatefulWidget {
   const HomePage({super.key});
@@ -44,19 +46,16 @@ class _HomePageState extends State<HomePage> {
               ],
             ),
           ),
-          Padding(
-            padding: const EdgeInsets.all(16.0),
-            child: TextField(
-              decoration: const InputDecoration(
-                hintText: 'Search cities or @username',
-                suffixIcon: Icon(Icons.search),
-                border: OutlineInputBorder(),
+          Expanded(
+            child: Padding(
+              padding: const EdgeInsets.all(20.0),
+              child: ClipRRect(
+                borderRadius: BorderRadius.circular(16.0),
+                child: const MapPage(),
               ),
-              onSubmitted: (value) {
-                // Handle search
-              },
             ),
           ),
+          const SizedBox(height: 40),
         ],
       ),
     );
