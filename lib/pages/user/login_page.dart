@@ -96,6 +96,16 @@ class _LoginPageState extends State<LoginPage> {
               ),
               child: const Text('Sign In'),
             ),
+            const SizedBox(height: 16),
+            TextButton(
+              onPressed: () {
+                Navigator.pushNamed(context, '/forgot-password');
+              },
+              child: const Text(
+                'Forgot Password? Click here',
+                style: TextStyle(color: Colors.black, fontSize: 16),
+              ),
+            )
           ],
         ),
       ),
